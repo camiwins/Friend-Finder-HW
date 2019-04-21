@@ -1,10 +1,3 @@
-// *** INSTRUCTIONS ***
-// =====================================
- 
-// * Should contain two routes
-// * GET route with the url /api/friends to display a JSON of all possible friends
-// * A post routes /api/friends that will be used to handle incoming survey results and also used for compatibility logic
-
 var friends = require("../data/friends.js");
 
 module.exports = function (app) {
@@ -42,7 +35,7 @@ module.exports = function (app) {
                     bestMatch.friendDifference = totalDifference;
                 }
             }
-        }
+        }   
 
         friends.push(userData);
 

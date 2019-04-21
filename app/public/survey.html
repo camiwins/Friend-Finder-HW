@@ -6,176 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid">
+    <!-- JUMBOTRON -->
+    <div class="container w-50 mt-5">
+        <div class="jumbotron jumbotron-fluid" style="background-color:	#FEF0D6">
             <div class="container">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                <h1 class="display-4">Who is your Friends BFF?</h1>
+                <p class="lead">Answer each statement below with a number from 1 (strongly disagree) to 5 (strongly
+                    agree). Hit submit and your new best friend will be displayed.</p>
+
+                <!-- User info -->
+                <h3>Your Info</h4>
+                    <b>Name (Required)</b><br>
+                    <input type="text" name="" id="name" class="form-control" required>
+
+                    <b>Photo (Image URL)</b><br>
+                    <input type="text" name="" id="photo" class="form-control" required>
             </div>
         </div>
-        <!-- INSTRUCTIONS: -->
-        <!-- * Should have 10 questions -->
-        <!-- * Each answer should be on scale of 1-5  -->
 
-        <h4>Your Info</h4>
-        <b>Name (Required)</b>
-        <input type="text" name="" id="name" class="form-control" required>
+        <!-- Questions start here-->
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 1</h4>
+                <h2>Fashion is everything!</h2>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
-        <b>Photo</b>
-        <input type="text" name="" id="photo" class="form-control" required>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 2</h4>
+                <h2>I believe that spirits can get trapped in other bodies.</h2>
+                <select data-placeholder="" class="chosen-select" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
-        <hr>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 3</h4>
+                <h2>Sandwiches and the Knicks rule!</h2>
+                <select data-placeholder="" class="chosen-select" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
-        <h4>Question 1</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 4</h4>
+                <h2>Family is important to me.</h2>
+                <select data-placeholder="" class="chosen-select" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
-        <h4>Question 2</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q2">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 5</h4>
+                <h2>Smoking is amazing.</h2>
+                <select data-placeholder="" class="chosen-select" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
-        <h4>Question 3</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q3">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 6</h4>
+                <h2>Nothing beats going to a Dinosaur seminar.</h2>
+                <select data-placeholder="" class="chosen-select" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
-        <h4>Question 4</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q4">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 7</h4>
+                <h2>It's not the smelly cat's fault.</h2>
+                <select data-placeholder="" class="chosen-select" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 8</h4>
+                <h2>It's okay to eat off of your date's plate.</h2>
+                <select data-placeholder="" class="chosen-select" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 9</h4>
+                <h2>It's called a Joey's apple.</h2>
+                <select data-placeholder="" class="chosen-select" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="card mb-5" style="background-color:	#FEF0D6">
+            <div class="card-body">
+                <h4>Question 10</h4>
+                <h2>Cleaning is relaxing.</h2>
+                <select data-placeholder="" class="chosen-select" id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
-        <h4>Question 5</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q5">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h4>Question 6</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q6">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h4>Question 7</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q7">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h4>Question 8</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q8">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h4>Question 9</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q9">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h4>Question 10</h4>
-        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-        <select data-placeholder="" class="chosen-select" id="q10">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <br>
-
-        <button type="submit" class="btn btn-primary submit">Submit</button>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
 
     </div>
 </body>
 
 <footer></footer>
 
-<div id="resultsModal"  class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
+<!-- MODAL -->
+<div id="resultsModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Best Match</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                <h5 class="modal-title">Best Match</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
-              <h2 id="matchName"></h2>
-              <img id="matchImg" src="https://themcaa.org/wp-content/uploads/2015/12/blogpost-placeholder-100x100-300x300.png">
+                <h2 id="matchName"></h2>
+                <img id="matchImg" src="https://themcaa.org/wp-content/uploads/2015/12/blogpost-placeholder-100x100-300x300.png">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
 <script type="text/javascript">
+
     $(".submit").on("click", function () {
         function validateForm() {
             var isValid = true;
@@ -211,15 +248,16 @@
                 ]
             };
 
-            $.post("/api/friends", userData, function (data) {
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", userData, function (data) {
                 console.log(data)
-                $("matchName").text(data.name);
-                $("matchImg").attr("src", data.photo);
+                $("#matchName").text(data.name);
+                $("#matchImg").attr("src", data.photo);
                 $("#resultsModal").modal("toggle");
-                alert("working");
             });
+
         } else {
-            alert("Please fill out");
+            alert("Please fill out everything on the form.");
         }
         return false;
     })
